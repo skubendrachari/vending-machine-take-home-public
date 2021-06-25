@@ -6,7 +6,7 @@ You must have the .NET SDK installed. .NET Core 5.0 is recommended.
 ## Executing
 
 - After cloning the application 
-- If Visual studio code is available open the solution file VendingMachine.sln and set the 
+- If Visual studio code is available open the solution file VendingMachine.sln and set the VendingMachine console application as startup and fire up VS
 - Or else from the visual studio command prompt execute
 ```console
 dotnet build VendingMachine.sln --no-restore
