@@ -19,13 +19,13 @@ jobs:
         dotnet-version: 5.0.x
     - name: Restore dependencies
       run: dotnet restore
-      working-directory: src
+      working-directory: exercise/src
     - name: Build VendingMachine App
       run: dotnet build --no-restore
-      working-directory: src
+      working-directory: exercise/src
     - name: Test VendingMachine App
       run: dotnet test --no-build --verbosity normal
-      working-directory: src
+      working-directory: exercise/src
     - name: Deploy VendingMachine App
-      run: dotnet publish VendingMachine.csproj -c Release -o ~/app/ --runtime win10-x64 --self-contained true -p:PublishSingleFile=true
-      working-directory: src/VendingMachine/
+      run: dotnet publish VendingMachine.csproj -c Release -o ~/exercise/app/ --runtime win10-x64 --self-contained true -p:PublishSingleFile=true
+      working-directory: exercise/src/VendingMachine/
